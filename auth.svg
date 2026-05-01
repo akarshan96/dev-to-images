@@ -1,0 +1,70 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#050805"/>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" fill="#39ff88" font-size="28" font-family="Arial, sans-serif">
+    Auth Gateway Overview
+  </text>
+
+  <!-- BEFORE PANEL -->
+  <rect x="80" y="120" width="460" height="450" rx="12" fill="#0d140f" stroke="#ff5c5c" stroke-width="2"/>
+  
+  <text x="310" y="160" text-anchor="middle" fill="#ff5c5c" font-size="16">Before</text>
+  <text x="310" y="190" text-anchor="middle" fill="#ffffff" font-size="18">Auth in every service</text>
+
+  <!-- Flow -->
+  <text x="310" y="240" text-anchor="middle" fill="#8fa99a">Client → Services</text>
+
+  <!-- Services -->
+  <rect x="140" y="280" width="120" height="60" rx="6" fill="#161f18" stroke="#444"/>
+  <text x="200" y="315" text-anchor="middle" fill="#fff">Service A</text>
+
+  <rect x="280" y="280" width="120" height="60" rx="6" fill="#161f18" stroke="#444"/>
+  <text x="340" y="315" text-anchor="middle" fill="#fff">Service B</text>
+
+  <rect x="420" y="280" width="120" height="60" rx="6" fill="#161f18" stroke="#444"/>
+  <text x="480" y="315" text-anchor="middle" fill="#fff">Service C</text>
+
+  <!-- Issues -->
+  <text x="110" y="380" fill="#ff5c5c" font-size="14">✕ Library drift</text>
+  <text x="110" y="410" fill="#ff5c5c" font-size="14">✕ Multiple auth implementations</text>
+  <text x="110" y="440" fill="#ff5c5c" font-size="14">✕ No centralized logging</text>
+  <text x="110" y="470" fill="#ff5c5c" font-size="14">✕ Inconsistent behavior</text>
+
+  <!-- AFTER PANEL -->
+  <rect x="660" y="120" width="460" height="450" rx="12" fill="#0d140f" stroke="#39ff88" stroke-width="2"/>
+
+  <text x="890" y="160" text-anchor="middle" fill="#39ff88" font-size="16">After</text>
+  <text x="890" y="190" text-anchor="middle" fill="#ffffff" font-size="18">One gateway, one decision</text>
+
+  <!-- Flow -->
+  <text x="890" y="240" text-anchor="middle" fill="#8fa99a">
+    Client → NGINX → Auth Service
+  </text>
+
+  <!-- Gateway -->
+  <rect x="740" y="270" width="120" height="60" rx="6" fill="#102417" stroke="#39ff88"/>
+  <text x="800" y="305" text-anchor="middle" fill="#39ff88">NGINX</text>
+
+  <rect x="900" y="270" width="140" height="60" rx="6" fill="#102417" stroke="#20d6a3"/>
+  <text x="970" y="305" text-anchor="middle" fill="#20d6a3">Auth Service</text>
+
+  <!-- Services -->
+  <rect x="720" y="360" width="120" height="60" rx="6" fill="#161f18" stroke="#39ff88"/>
+  <text x="780" y="395" text-anchor="middle" fill="#fff">Service A</text>
+
+  <rect x="860" y="360" width="120" height="60" rx="6" fill="#161f18" stroke="#39ff88"/>
+  <text x="920" y="395" text-anchor="middle" fill="#fff">Service B</text>
+
+  <rect x="1000" y="360" width="120" height="60" rx="6" fill="#161f18" stroke="#39ff88"/>
+  <text x="1060" y="395" text-anchor="middle" fill="#fff">Service C</text>
+
+  <!-- Benefits -->
+  <text x="690" y="450" fill="#39ff88" font-size="14">✓ Centralized auth</text>
+  <text x="690" y="480" fill="#39ff88" font-size="14">✓ Consistent decisions</text>
+  <text x="690" y="510" fill="#39ff88" font-size="14">✓ Single audit log</text>
+  <text x="690" y="540" fill="#39ff88" font-size="14">✓ Secure by default</text>
+
+</svg>
